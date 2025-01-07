@@ -656,7 +656,7 @@ footer {
 
     <section class="question-area">
         <div>
-            <p>Question <span id="question-number">1</span>/10</p>
+            <p>Question <span id="question-number">1</span>/20</p>
             <p id="question-text" class="question"></p>
 
             <div class="options">
@@ -696,6 +696,16 @@ footer {
             <div class="q8">8</div>
             <div class="q9">9</div>
             <div class="q10">10</div>
+            <div class="q11">10</div>
+            <div class="q12">10</div>
+            <div class="q13">10</div>
+            <div class="q14">10</div>
+            <div class="q15">10</div>
+            <div class="q16">10</div>
+            <div class="q17">10</div>
+            <div class="q18">10</div>
+            <div class="q19">10</div>
+            <div class="q20">10</div>
         </div>
     
         <div class="bottom">
@@ -815,8 +825,109 @@ footer {
          "undefined"
         ],
       "answer": 1
+    },
+    {
+      "question": "What is the purpose of logarithms in mathematics?",
+      "options": [
+         "To simplify complex numbers",
+         "To simplify calculations involving large numbers",
+         "To solve quadratic equations",
+         "To graph trigonometric functions"
+        ],
+      "answer": 1
+    },
+    {
+      "question": "What is the union of two sets A and B?",
+      "options": [
+         "The set of elements that are common to both A and B",
+         "The set of elements that are in A or B or both",
+         "The set of elements that are in A but not in B",
+         "The set of elements that are in B but not in A"
+        ],
+      "answer": 1
+    },
+    {
+      "question": "What is the purpose of partial fractions in mathematics?",
+      "options": [
+         "To simplify complex numbers",
+         "To integrate rational functions",
+         "To solve quadratic equations",
+         "To graph trigonometric functions"
+        ],
+      "answer": 1
+    },
+    {
+      "question": "What is the definition of a complex number?",
+      "options": [
+         "A number that can be expressed in the form a + bi",
+         "A number that can be expressed in the form a - bi",
+         "A number that can be expressed in the form a / bi",
+         "A number that can be expressed in the form a * bi"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the quadratic formula used for?",
+      "options": [
+         "To solve linear equations",
+         "To solve quadratic equations",
+         "To solve cubic equations",
+         "To solve trigonometric equations"
+        ],
+      "answer": 1
+    },
+    {
+      "question": "What is the binomial theorem used for?",
+      "options": [
+         "To expand expressions of the form (a + b)^n",
+         "To expand expressions of the form (a - b)^n",
+         "To expand expressions of the form (a / b)^n",
+         "To expand expressions of the form (a * b)^n"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the definition of a surd?",
+      "options": [
+         "A number that can be expressed as a finite decimal",
+         "A number that can be expressed as a ratio of integers",
+         "A number that cannot be expressed as a finite decimal or ratio of integers",
+         "A number that can be expressed as a product of integers"
+        ],
+      "answer": 2
+    },
+    {
+      "question": "What is the principle of mathematical induction used for?",
+      "options": [
+         "To prove that a statement is true for all positive integers",
+         "To prove that a statement is true for all negative integers",
+         "To prove that a statement is true for all rational numbers",
+         "To prove that a statement is true for all real numbers"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the definition of the sine function in trigonometry?",
+      "options": [
+         "The ratio of the length of the opposite side to the length of the hypotenuse",
+         "The ratio of the length of the adjacent side to the length of the hypotenuse",
+         "The ratio of the length of the opposite side to the length of the adjacent side",
+         "The ratio of the length of the hypotenuse to the length of the opposite side"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the definition of the cosine function in trigonometry?",
+      "options": [
+         "The ratio of the length of the opposite side to the length of the hypotenuse",
+         "The ratio of the length of the adjacent side to the length of the hypotenuse",
+         "The ratio of the length of the opposite side to the length of the adjacent side",
+         "The ratio of the length of the hypotenuse to the length of the adjacent side"
+        ],
+      "answer": 1
     }
 ]
+  
 
 let currentQuestionIndex = 0;
 let userAnswers = new Array(questions.length).fill(null); 
@@ -840,7 +951,7 @@ function loadQuestion() {
     option3Label.textContent = currentQuestion.options[2];
     option4Label.textContent = currentQuestion.options[3];
     questionNumber.textContent = currentQuestionIndex + 1;
-    if (questionNumber.textContent == 10) {
+    if (questionNumber.textContent == 20) {
         document.getElementById("sub-btn").style.display = "flex";
     }
     else {

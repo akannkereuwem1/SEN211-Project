@@ -656,7 +656,7 @@ footer {
 
     <section class="question-area">
         <div>
-            <p>Question <span id="question-number">1</span>/10</p>
+            <p>Question <span id="question-number">1</span>/20</p>
             <p id="question-text" class="question"></p>
 
             <div class="options">
@@ -695,17 +695,17 @@ footer {
             <div class="q7">7</div>
             <div class="q8">8</div>
             <div class="q9">9</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
-            <div class="q10">10</div>
+             <div class="q10">10</div>
+            <div class="q11">11</div>
+            <div class="q12">12</div>
+            <div class="q13">13</div>
+            <div class="q14">14</div>
+            <div class="q15">15</div>
+            <div class="q16">16</div>
+            <div class="q17">17</div>
+            <div class="q18">18</div>
+            <div class="q19">19</div>
+            <div class="q20">20</div>
         </div>
     
         <div class="bottom">
@@ -951,7 +951,7 @@ function loadQuestion() {
     option3Label.textContent = currentQuestion.options[2];
     option4Label.textContent = currentQuestion.options[3];
     questionNumber.textContent = currentQuestionIndex + 1;
-    if (questionNumber.textContent == 10) {
+    if (questionNumber.textContent == 20) {
         document.getElementById("sub-btn").style.display = "flex";
     }
     else {

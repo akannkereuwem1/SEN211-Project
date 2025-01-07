@@ -696,6 +696,16 @@ footer {
             <div class="q8">8</div>
             <div class="q9">9</div>
             <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
+            <div class="q10">10</div>
         </div>
     
         <div class="bottom">
@@ -716,7 +726,7 @@ footer {
     <script>
         //Text me if you have questions
       const questions =[
-      {
+    {
       "question": "Evaluate the limit: lim (x→0) (sin(x) / x)",
       "options": [
          "0", 
@@ -815,8 +825,109 @@ footer {
          "e^x / (e^x - 1) + C"
         ],
       "answer": 0
+    },
+    {
+      "question": "What is the primary purpose of the concept of a limit in calculus?",
+      "options": [
+         "To define the derivative of a function", 
+         "To define the continuity of a function", 
+         "To define the integral of a function", 
+         "To study the behavior of a function as the input values approach a specific point"
+        ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following statements about continuity is true?",
+      "options": [
+         "A function can be continuous at a point without being defined at that point", 
+         "A function can be continuous at a point even if it is not differentiable at that point", 
+         "A function must be defined at a point in order to be continuous at that point", 
+         "A function must be differentiable at a point in order to be continuous at that point"
+        ],
+      "answer": 2
+    },
+    {
+      "question": "What is the definition of the derivative of a function f(x) at a point x=a?",
+      "options": [
+         "The limit as h approaches 0 of [f(a+h) - f(a)]/h", 
+         "The limit as h approaches 0 of [f(a+h) + f(a)]/h", 
+         "The limit as h approaches 0 of [f(a+h) - f(a)]/a", 
+         "The limit as h approaches 0 of [f(a+h) + f(a)]/a"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the power rule of differentiation?",
+      "options": [
+         "If f(x) = x^n, then f'(x) = nx^(n-1)", 
+         "If f(x) = x^n, then f'(x) = nx^(n+1)", 
+         "If f(x) = x^n, then f'(x) = (n+1)x^n", 
+         "If f(x) = x^n, then f'(x) = (n-1)x^n"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the fundamental theorem of calculus?",
+      "options": [
+         "The derivative of an integral is equal to the original function", 
+         "The integral of a derivative is equal to the original function", 
+         "The derivative of a sum is equal to the sum of the derivatives", 
+         "The integral of a product is equal to the product of the integrals"
+        ],
+      "answer": 1
+    },
+    {
+      "question": "What is the definition of a definite integral?",
+      "options": [
+         "The limit as n approaches infinity of the sum of the areas of n rectangles", 
+         "The limit as n approaches infinity of the sum of the lengths of n line segments", 
+         "The limit as n approaches infinity of the sum of the volumes of n solids", 
+         "The limit as n approaches infinity of the sum of the areas of n trapezoids"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the substitution rule of integration?",
+      "options": [
+         "If u = g(x), then ∫f(u)du = ∫f(g(x))g'(x)dx", 
+         "If u = g(x), then ∫f(u)du = ∫f(g(x))/g'(x)dx", 
+         "If u = g(x), then ∫f(u)du = ∫f(g(x))dx", 
+         "If u = g(x), then ∫f(u)du = ∫f(g(x))g(x)dx"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the definition of an improper integral?",
+      "options": [
+         "An integral with an infinite limit of integration", 
+         "An integral with a discontinuous integrand", 
+         "An integral with a non-elementary antiderivative", 
+         "An integral with a multivariable integrand"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the purpose of integration by parts?",
+      "options": [
+         "To integrate functions that can be written as a product of two functions", 
+         "To integrate functions that can be written as a sum of two functions", 
+         "To integrate functions that can be written as a difference of two functions", 
+         "To integrate functions that can be written as a quotient of two functions"
+        ],
+      "answer": 0
+    },
+    {
+      "question": "What is the definition of a parametric integral?",
+      "options": [
+         "An integral that is evaluated using a parameter", 
+         "An integral that is evaluated using a substitution", 
+         "An integral that is evaluated using integration by parts", 
+         "An integral that is evaluated using a numerical method"
+        ],
+      "answer": 0
     }
 ]
+  
 
 let currentQuestionIndex = 0;
 let userAnswers = new Array(questions.length).fill(null); 
